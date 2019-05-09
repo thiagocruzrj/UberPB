@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">UberPB</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="titulo_register">Cadastrar uma conta</string>
+    <string name="titulo_login">Acessar minha conta</string>
+</resources>
