@@ -8,6 +8,7 @@
     -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -16,7 +17,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.RequestsActivity"></activity>
+        <activity
+            android:name=".activity.PassgeiroActivity"
+            android:label="@string/title_activity_passgeiro"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".activity.RequestsActivity" />
         <activity
             android:name=".activity.RegisterActivity"
             android:label="@string/titulo_register"
@@ -25,7 +30,6 @@
             android:name=".activity.LoginActivity"
             android:label="@string/titulo_login"
             android:parentActivityName=".activity.MainActivity" />
-        <activity android:name=".activity.MapsActivity" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").

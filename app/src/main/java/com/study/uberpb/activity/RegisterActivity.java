@@ -87,7 +87,7 @@ public class RegisterActivity extends AppCompatActivity {
                         // If the user be a passenger we'll call the activity maps
                         // Else we'll call the activity requests
                         if( verificarUserType() == "P"){
-                            startActivity(new Intent(RegisterActivity.this, MapsActivity.class));
+                            startActivity(new Intent(RegisterActivity.this, PassgeiroActivity.class));
                             finish();
                             Toast.makeText(RegisterActivity.this, "Sucesso ao cadastrar o Passageiro!",
                                     Toast.LENGTH_SHORT).show();
