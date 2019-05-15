@@ -18,9 +18,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".activity.CorridaActivity"
+            android:label="@string/title_activity_corrida"
+            android:parentActivityName=".activity.RequestsActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.study.uberpb.activity.RequestsActivity" />
+        </activity>
+        <activity
             android:name=".activity.PassgeiroActivity"
             android:label="@string/title_activity_passgeiro"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".activity.RequestsActivity" />
         <activity
             android:name=".activity.RegisterActivity"
