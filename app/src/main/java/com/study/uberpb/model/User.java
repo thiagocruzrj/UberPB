@@ -12,6 +12,9 @@ public class User {
     private String senha;
     private String tipo;
 
+    private String latitude;
+    private String longitude;
+
     public User() {
     }
 
@@ -19,6 +22,22 @@ public class User {
         DatabaseReference firebaseRef = ConfiguracaoFirebase.getFirebaseDatabase();
         DatabaseReference users = firebaseRef.child( "users" ).child(getId());
         users.setValue(this);
+    }
+
+    public String getLatitude() {
+        return latitude;
+    }
+
+    public void setLatitude(String latitude) {
+        this.latitude = latitude;
+    }
+
+    public String getLongitude() {
+        return longitude;
+    }
+
+    public void setLongitude(String longitude) {
+        this.longitude = longitude;
     }
 
     public String getId() {

@@ -23,6 +23,7 @@
     <include layout="@layout/content_passgeiro" />
 
     <LinearLayout
+        android:id="@+id/linearLayoutDestino"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
@@ -53,8 +54,8 @@
             android:layout_height="40dp"
             android:background="@android:color/white"
             android:drawableLeft="@drawable/green_circle"
-            android:drawableTint="@android:color/darker_gray"
             android:drawablePadding="6dp"
+            android:drawableTint="@android:color/darker_gray"
             android:ems="10"
             android:hint="Digite o seu destino"
             android:inputType="textPersonName"
@@ -65,7 +66,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/buttonChamarUber"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_gravity="bottom"
